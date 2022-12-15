@@ -4,7 +4,12 @@ import java.util.ArrayList;
 
 public class Library {
     private ArrayList<Book> books;
-
+    public Library(ArrayList<Book> books) {
+        this.books = books;
+    }
+    public Library(){
+        this.books = new ArrayList<Book>();
+    }
     public ArrayList<Book> getBooks() {
         return books;
     }
@@ -12,8 +17,7 @@ public class Library {
     public void setBooks(ArrayList<Book> books) {
         this.books = books;
     }
-    //Registrar un libro
-    public void addbook(ArrayList<Book> books, Book b){
+    public void addbook(Book b){
         books.add(b);
     }
 }
